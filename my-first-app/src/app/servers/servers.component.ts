@@ -5,10 +5,18 @@ import { Component, OnInit } from '@angular/core';
   // templateUrl: './servers.component.html',
   template:
   `
+  <h3>Test Header</h3>
   <app-server></app-server>
   <app-server></app-server>
   `,
-  styleUrls: ['./servers.component.css']
+  // styleUrls: ['./servers.component.css'],
+  styles:[
+    `
+    h3{
+      color:dodgerblue;
+    }
+    `
+  ]
 })
 export class ServersComponent implements OnInit {
 
