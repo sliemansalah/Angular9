@@ -7,11 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <input type="text" [(ngModel)]="title">
-  <p>{{title}}</p> -->
-
-  <input [value]="title" (input)="title = $event.target.value">
-
+<h1>
+  Welcome to {{ title }}!
+</h1>
+<input type="text" [(ngModel)]="title">
 <p>{{title}}</p>
 </body>
 </html>
