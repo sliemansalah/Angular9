@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   template:
   `
   <h3>Test Header</h3>
-  <app-server></app-server>
-  <app-server></app-server>
   `,
   // styleUrls: ['./servers.component.css'],
   styles:[

@@ -1,5 +1,5 @@
-<h1>
-  Welcome to {{ title }}!
-</h1>
-<input type="text" [(ngModel)]="title">
-<p>{{title}}</p>
+<p>{{ 'Server' }} with ID {{ serverID }} is <span [ngStyle]="{color:getColor(),backgroundColor:getBackColor(),padding:getPadding()}">{{ serverStatus }}</span></p>
+
+<p>{{ 'Server' }} with ID {{ serverID }} is <span [ngClass]="serverStatus=='online'?'on':'off'">{{ serverStatus }}</span></p>
+
+<button (click)="serverStatus=='online'?serverStatus='offline':serverStatus='online'">Change Status</button>
